@@ -172,6 +172,9 @@ final class GenerateFeedsCommand extends ContainerAwareCommand
                 }
             }
 
+            $product->setCurrentLocale($locale->getCode());
+
+
             $data = [
                 'id' => $product->getId(),
                 'code' => $product->getCode(),
